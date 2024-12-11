@@ -1,0 +1,132 @@
+<html></html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" /> 
+    <style>
+      body {
+        background-image: url("angelbaby.jpg")
+      }
+      </style>
+</head>
+<div class = "main-content">
+
+<center>
+<h7>ESP</h7>
+</center>
+
+
+<h2>Find Peace in the Macabre</h2>
+
+
+
+    <h2>Recent Works</h2>
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+  <div class = "image-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="HYLM.jpg" style="width: 30vw">
+      <div class="text">1</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="quickbefore.jpg" style="width:30vw">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="statue hand printer riso copy.jpg" style="width:30vw">
+      
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="MOS.jpg" style="width:30vw">
+        
+    </div>
+
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="hummingbird tattoo copy 2.jpg" style="width:30vw">
+       
+    </div>
+  </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+</div>
+
+
+<div class = "sidebar">
+  <ul>
+    <li> <a href="Short Films.html">Short Films</a></li>
+    <li><a href="Photography.html">Photography</a></li>
+    <li><a href="Installations.html">Installations</a></li>
+    <li><a href="tattoo.html">Tattoo</a></li>
+  <li><a href="Cosplay.html">Cosplay</a></li>
+   <li> <a href="Painting&Drawing.html">Painting & Drawing</a></li>
+   <li><a href="Woodburned Works.html">Woodburned Works</a></li>
+    <li><a href="About.html">About</a></li>
+  </ul>
+</div>
+
+<script>
+
+    const images = document.getElementsByClassName('mySlides');
+    var current = 0;
+    setImage();
+
+    function setImage(){
+
+      for(let i = 0; i<images.length;i++){
+          if (i == current){
+            images[i].style.display = 'block';
+          }
+          else {
+            images[i].style.display = 'none';
+          }
+      }
+
+    }
+
+    function plusSlides(inc){
+      current += inc;
+      if(current<0){
+        current = 0;
+      }
+      else if (current>images.length){
+        current = images.length;
+      }
+      setImage();
+    }
+
+    function currentSlide(num){
+        current = num;
+        setImage();
+    }
+  </script>
+
+
+
+
+
+
+
